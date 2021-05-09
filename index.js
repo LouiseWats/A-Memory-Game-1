@@ -6,16 +6,6 @@ let started = false;
 let level = 0;
 
 
-$("body").on("click", function (){
-
-    if (!started) {
-        $("title-level").text("Level " + level);
-        nextSequence();
-        started = true;
-    }
-
-})
-
 $("body").keydown(function (){
 
     if (!started) {
